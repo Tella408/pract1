@@ -11,26 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="65dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="236dp" />
-
+        android:text="TextView"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="195dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
