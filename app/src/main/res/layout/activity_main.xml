@@ -5,40 +5,141 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gbn" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="95dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="36dp"
+        android:text="Регистрация"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="65dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/imageView5"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/_ae44fa9ad8055ed0b97e75150f627af" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="236dp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="60dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="36dp"
+        android:text="Помощь"
+        android:typeface="sans"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/c0cb0b43808c47db7af97fcff61f072a" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="36dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="36dp"
+        android:text="Вход"
+        android:typeface="sans"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_38652ca30643723346ed7be5db2e76e" />
+
+    <EditText
+        android:id="@+id/editTextText1"
+        android:layout_width="296dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="368dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=" Введите ваше имя"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="296dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="280dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=" Введите ваш контактный номер"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="296dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="324dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=" Введите вашу фамилию"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="286dp" />
+        android:layout_width="294dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="196dp"
+        android:backgroundTint="#FF5722"
+        android:insetLeft="0dp"
+        android:text="Зарегестрироваться"
+        android:visibility="visible"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="296dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginBottom="96dp"
+        android:text="Согласен(-а) с условиями использования и политикой конфидециальности"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
